@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+#main-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    ". t ."
+    "m m m"
+    "c b l";
+    background-color: lightblue;
+}
+
+#timer {
+    grid-area: t;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#main-screen {
+    grid-area: m;
+    position: relative;
+}
+
+#count {
+    grid-area: c;
+    display: grid;
+    justify-content: center;
+    align-content: center;}
+
+#button {
+    grid-area: b;
+    background-color: grey;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+#level {
+    grid-area: l;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.rabbit {
+    display: inline-block;
+    position: absolute;
+}
