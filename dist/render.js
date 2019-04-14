@@ -15,7 +15,7 @@ const RabbitRender = function(){
     }
 
     const renderRabbitCount = function(rabbits){
-        $("#count").text(`Rabbits remaining: ${rabbits.length}`)
+        $("#count").text(`Bunnies remaining: ${rabbits.length}`)
     }
 
     const renderLevel = function(rabbits, level){

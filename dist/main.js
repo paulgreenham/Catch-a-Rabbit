@@ -36,7 +36,7 @@ const clock = function(){
 }
 
 const runClock = function(){
-    $("#timer").text(`${secondsRemaining + 1} seconds remaining`)
+    $("#timer").text(`${secondsRemaining + 5} seconds remaining`)
     timerID = setInterval(clock, 1000)
 }
 
