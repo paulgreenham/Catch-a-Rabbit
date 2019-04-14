@@ -9,6 +9,4 @@ app.use(express.static(path.join(__dirname, "node_modules")))
 
 const port = 2000
 
-app.listen(port, function() {
-    console.log(`Server up an running, port: ${port}`)
-})
+app.listen(process.env.PORT || port)
